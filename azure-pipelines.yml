@@ -36,7 +36,3 @@ steps:
     arguments: '--ship'
     workingDirectory: '$(System.DefaultWorkingDirectory)/MM/$(localpath)'
     enableCodeCoverage: false
-- task: CopyFiles@2
-  inputs:
-    Contents: '**'
-    TargetFolder: '$(Build.ArtifactStagingDirectory)/drop'
