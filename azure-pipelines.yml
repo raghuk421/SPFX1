@@ -27,11 +27,3 @@ steps:
       Write-Host "Hello World Power sheel  ra raghu"
       
       # Use the environment variables input below to pass secret variables to this script.
-- task: Gulp@1
-  inputs:
-    gulpFile: 'gulpfile.js'
-    targets: 'package-solution'
-    arguments: '--ship'
-    workingDirectory: '$(System.DefaultWorkingDirectory)/MM/$(localpath)'
-    enableCodeCoverage: false
-    enableCodeCoverage: false
