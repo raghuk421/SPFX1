@@ -1,5 +1,6 @@
 # Node.js
 
+
 # Build a general Node.js project with npm.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
@@ -35,3 +36,7 @@ steps:
     arguments: '--ship'
     workingDirectory: '$(System.DefaultWorkingDirectory)/MM/$(localpath)'
     enableCodeCoverage: false
+- task: CopyFiles@2
+  inputs:
+    Contents: '**'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)/drop'
