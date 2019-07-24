@@ -32,4 +32,6 @@ steps:
     gulpFile: 'gulpfile.js'
     targets: 'package-solution'
     arguments: '--ship'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/MM/$(localpath)'
+    enableCodeCoverage: false
     enableCodeCoverage: false
