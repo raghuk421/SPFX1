@@ -23,22 +23,4 @@ steps:
 - task: Npm@1
   inputs:
     command: 'install'
-- task: PowerShell@2
-  inputs:
-    targetType: 'inline'
-    script: |
-      # Write your powershell commands here.
-      
-      Write-Host "Hello World Power sheel  ra raghu directory path "$env:System_DefaultWorkingDirectory
-      
-      # Use the environment variables input below to pass secret variables to this script.
-- task: Gulp@1
-  inputs:
-    gulpFile: 'gulpfile.js'
-    targets: 'package-solution'
-    arguments: '--ship'
-    workingDirectory: '$(System.DefaultWorkingDirectory)/MM/$(localpath)'
-  
-    enableCodeCoverage: false
-- publish: $(System.DefaultWorkingDirectory)/bin/spfx_arti
-  artifact: spfx_arti
+
