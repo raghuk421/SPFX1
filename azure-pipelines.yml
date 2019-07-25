@@ -23,4 +23,13 @@ steps:
 - task: Npm@1
   inputs:
     command: 'install'
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your powershell commands here.
+      
+      Write-Host "Hello World raghu yes its working"
+      
+      # Use the environment variables input below to pass secret variables to this script.
 
