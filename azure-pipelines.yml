@@ -38,6 +38,7 @@ steps:
     targets: 'package-solution'
     arguments: '--ship'
     workingDirectory: '$(System.DefaultWorkingDirectory)/MM/$(localpath)'
+  
     enableCodeCoverage: false
 - publish: $(System.DefaultWorkingDirectory)/bin/spfx_arti
   artifact: spfx_arti
