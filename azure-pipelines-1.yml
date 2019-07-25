@@ -24,6 +24,7 @@ steps:
    gulp clean
    gulp bundle --ship
    gulp package-solution --ship
-   displayname: "build and package solution"
+   
+   displayName: "build and package solution"
 
 
