@@ -12,13 +12,9 @@ pool:
 steps:
 - task: NodeTool@0
   inputs:
-    versionSpec: '10.x'
+    versionSpec: '8.x'
   displayName: 'Install Node.js'
-- task: Gulp@1
-  inputs:
-    gulpFile: 'gulpfile.js'
-    targets: 'install'
-    enableCodeCoverage: false
+
 
 - script: |
     npm install
