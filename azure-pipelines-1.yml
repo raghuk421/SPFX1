@@ -18,6 +18,7 @@ steps:
 
 - script: |
     npm install
+    npm install gulp --save
   displayName: 'npm install and build'
 
 - script: |
