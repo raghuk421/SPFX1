@@ -32,4 +32,8 @@ steps:
       Write-Host "Hello World raghu yes its working"
       
       # Use the environment variables input below to pass secret variables to this script.
-
+- script: |
+   gulp clean
+   gulp bundle --ship
+   gulp package-solution --ship
+   displayname: "build and package solution"
